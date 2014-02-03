@@ -1,6 +1,6 @@
 # SingletonRails
 
-This project rocks and uses MIT-LICENSE.
+This project rocks and uses the MIT license.
 
 ## Installation
 
