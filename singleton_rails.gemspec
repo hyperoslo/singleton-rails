@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "singleton-rails"
-  s.version     = "0.0.1"
+  s.version     = "0.0.2"
   s.authors     = ["Tim Kurvers", "Christoffer Winterkvist"]
   s.email       = ["johannes@hyper.no"]
   s.homepage    = "http://hyper.no"
@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*", "LICENSE", "Rakefile"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "rails", "~> 4.1.0.beta1"
+  s.add_dependency "rails", "~> 4.0.0"
 
   s.add_development_dependency "sqlite3"
 end
