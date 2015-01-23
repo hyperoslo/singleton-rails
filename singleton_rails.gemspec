@@ -1,4 +1,4 @@
-$:.push File.expand_path('../lib', __FILE__)
+$:.push File.expand_path("../lib", __FILE__)
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
@@ -13,5 +13,5 @@ Gem::Specification.new do |s|
 
   s.files = Dir['{app,config,db,lib}/**/*', 'LICENSE', 'Rakefile']
 
-  s.add_dependency 'rails', '~> 4.0.0'
+  s.add_dependency "rails", '>= 4.0.6', '< 5.0.0'
 end
