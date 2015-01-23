@@ -1,6 +1,14 @@
-# SingletonRails
+# Singleton Rails
 
-This project rocks and uses the MIT license.
+[![Gem Version](https://img.shields.io/gem/v/singleton-rails.svg?style=flat)](https://rubygems.org/gems/singleton-rails)
+[![Dependency Status](https://img.shields.io/gemnasium/hyperoslo/singleton-rails.svg?style=flat)](https://gemnasium.com/hyperoslo/singleton-rails)
+[![Code Climate](https://img.shields.io/codeclimate/github/hyperoslo/singleton-rails.svg?style=flat)](https://codeclimate.com/github/hyperoslo/singleton-rails)
+
+Adds singleton functionallity to ActiveRecord models.
+
+**Supported Rails versions: 4.0.6 or higher**
+
+Licensed under the **MIT** license, see LICENSE for more information.
 
 ## Installation
 
@@ -9,6 +17,7 @@ This project rocks and uses the MIT license.
 ## Usage
 
 ### Include Singleton in your model
+
 ```ruby
 class AboutPage < ActiveRecord::Base
   include ActiveRecord::Singleton
@@ -16,14 +25,15 @@ end
 ```
 
 ### Configure rails_admin
+
 ```ruby
 RailsAdmin.config do |config|
-  
+
   config.actions do
     dashboard
- 
+
     index &RailsAdmin::Config::Actions::SingletonAwareIndex::PATCH
-    new
+    new &RailsAdmin::Config::Actions::SingletonAwareNew::PATCH
     export
     history_index
     bulk_delete
@@ -34,11 +44,12 @@ RailsAdmin.config do |config|
     history_show
     show_in_app
   end
-  
+
 end
 ```
 
 ### How to use it in your controller
+
 ```ruby
   class AboutPageController < ApplicationController
     def index
