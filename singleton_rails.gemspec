@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.authors     = ['Tim Kurvers', 'Christoffer Winterkvist']
   s.email       = ['johannes@hyper.no']
   s.homepage    = 'https://github.com/hyperoslo/singleton-rails'
-  s.summary     = 'Forever Alone Ruby Gem'
+  s.summary     = 'Adds singleton functionallity to ActiveRecord models'
   s.description = 'Adds singleton functionallity to ActiveRecord models'
   s.license     = 'MIT'
 
