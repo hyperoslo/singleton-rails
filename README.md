@@ -6,7 +6,7 @@
 
 Adds singleton functionallity to ActiveRecord models.
 
-**Supported Rails versions: 4.0.6 or higher**
+**Supported Rails versions: 4.0.0 or higher**
 
 Licensed under the **MIT** license, see LICENSE for more information.
 
@@ -33,7 +33,7 @@ RailsAdmin.config do |config|
     dashboard
 
     index &RailsAdmin::Config::Actions::SingletonAwareIndex::PATCH
-    new &RailsAdmin::Config::Actions::SingletonAwareNew::PATCH
+    new
     export
     history_index
     bulk_delete
