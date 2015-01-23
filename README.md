@@ -9,6 +9,7 @@ This project rocks and uses the MIT license.
 ## Usage
 
 ### Include Singleton in your model
+
 ```ruby
 class AboutPage < ActiveRecord::Base
   include ActiveRecord::Singleton
@@ -16,12 +17,13 @@ end
 ```
 
 ### Configure rails_admin
+
 ```ruby
 RailsAdmin.config do |config|
-  
+
   config.actions do
     dashboard
- 
+
     index &RailsAdmin::Config::Actions::SingletonAwareIndex::PATCH
     new
     export
@@ -34,11 +36,12 @@ RailsAdmin.config do |config|
     history_show
     show_in_app
   end
-  
+
 end
 ```
 
 ### How to use it in your controller
+
 ```ruby
   class AboutPageController < ApplicationController
     def index
