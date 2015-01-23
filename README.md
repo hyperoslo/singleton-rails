@@ -1,6 +1,14 @@
-# SingletonRails
+# Singleton Rails
 
-This project rocks and uses the MIT license.
+[![Gem Version](https://img.shields.io/gem/v/singleton-rails.svg?style=flat)](https://rubygems.org/gems/singleton-rails)
+[![Dependency Status](https://img.shields.io/gemnasium/hyperoslo/singleton-rails.svg?style=flat)](https://gemnasium.com/hyperoslo/singleton-rails)
+[![Code Climate](https://img.shields.io/codeclimate/github/hyperoslo/singleton-rails.svg?style=flat)](https://codeclimate.com/github/hyperoslo/singleton-rails)
+
+Adds singleton functionallity to ActiveRecord models.
+
+**Supported Rails versions: 4.0.0 or higher**
+
+Licensed under the **MIT** license, see LICENSE for more information.
 
 ## Installation
 
