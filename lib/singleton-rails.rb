@@ -5,5 +5,5 @@ if defined? ActiveRecord
   if defined? RailsAdmin
     require "rails_admin/config/actions/singleton_aware_delete"
     require "rails_admin/config/actions/singleton_aware_index"
-  end	
+  end
 end
