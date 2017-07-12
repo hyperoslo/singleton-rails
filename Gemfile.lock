@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     singleton-rails (0.0.2.1)
-      rails (>= 4.0.6, < 5.0.0)
+      rails (>= 4.0.6, < 5.2)
 
 GEM
   remote: https://rubygems.org/
