@@ -12,7 +12,7 @@ module ActiveRecord
 
     private
 
-    def create_or_update
+    def create_or_update(*args, &block)
       run_callbacks(:save) do
         raise ReadOnlyRecord if readonly?
 
@@ -23,7 +23,7 @@ module ActiveRecord
         self.id = singleton.id if singleton
 
         # Update if a singleton record is found, otherwise insert one
-        result = singleton ? _update_record : _create_record
+        result = singleton ? _update_record(*args, &block) : _create_record(*args, &block)
         result != false
       end
     end
